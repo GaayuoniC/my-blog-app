@@ -1,10 +1,10 @@
 
-import styles from "./page.module.css";
+import styles from "@/app/page.module.css";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div>Hello World</div>
+      <div>Home Page</div>
        
     </main>
   );
