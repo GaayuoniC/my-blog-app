@@ -5,6 +5,7 @@ import styles from "./linkscss/links.module.css"
 import NavLink from "./navLink/navLink"
 
 const Links = ()=>{
+
     //Using use state to manage the responsiveness of the menu bar
     const [open,setOpen]= useState(false)
 
@@ -52,16 +53,21 @@ const Links = ()=>{
                     isAdmin && (
                         <NavLink item={{title:"Admin", path:"/admin"}}/> 
                     )
-                } 
-                <button className= {styles.logout}>Logout</button>
+                    } 
+                    <button className= {styles.logout}>Logout</button>
                 </>
                 ): (
+
                 <NavLink item={{title:"Login", path:"/login"}}/>
             )
         }
     </div> 
+
     {/* Implementing the use state on the button with an onclick event */}
+    
     <button className={styles.menuButton} onClick={()=>setOpen((prev)=>!prev)}>Menu</button>
+
+
     {
         open && <div className={styles.mobileLinks}>
             {links.map((link)=>(<NavLink item= {link} key={link.title}  />) )}
