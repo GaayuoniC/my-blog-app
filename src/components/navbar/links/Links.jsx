@@ -31,7 +31,7 @@ const Links = ()=>{
         }
     ]
 //Temporary data structure here!!
-    const session = true
+    const session = false
     const isAdmin = false
 
 //Map the array for the links below in the return part

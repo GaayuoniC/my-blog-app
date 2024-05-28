@@ -12,8 +12,9 @@
 
 .menuButton,
 .mobileLinks{
-  display: none;
-  /* If its not a small screen then display will be none */
+    /* If its not a small screen then display will be none */
+
+    
     display: none;
 }
 
