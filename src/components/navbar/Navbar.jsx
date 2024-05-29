@@ -1,7 +1,8 @@
- 
+import Link from "next/link"
 import Links from "./links/Links"
 //styles imported and the css as a module below:
 import styles from "../navbar/navbar.module.css"
+
 
 
 const Navbar= ()=>{
@@ -9,10 +10,12 @@ const Navbar= ()=>{
     return(
 
             <div className= {styles.container}>
-                <div className= {styles.logo}>LOGO</div>              
-                                
+                <Link href="/" className= {styles.logo}>C-M-M</Link>  
+                
+                <div>               
                
-                     <Links/>               
+                <Links/>  
+                </div>                
                 
             </div>
     )

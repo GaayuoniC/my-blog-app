@@ -1,0 +1,8 @@
+
+/* The image container  position must be relative */
+.imgContainer{
+    position: relative;
+    width:100% ;
+    height: 500px;
+
+}
