@@ -2,7 +2,7 @@
 /* The image container  position must be relative */
 .container{
  display: flex;
- gap: 100px;
+ gap: 200px;
  flex-wrap: wrap;
  /* justify-content: space-between; */
 

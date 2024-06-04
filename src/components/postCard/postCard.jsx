@@ -16,8 +16,9 @@ export default function PostCard (){
             </div>
             <div className= {styles.bottom}>
                 <h1 className= {styles.title}>Title</h1>
-                <p className= {styles.description}>Description</p>
-                <Link href= "/blog/post">Read more </Link>
+                <p className= {styles.description}> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, repudiandae. Obcaecati, fugiat minima. Omnis quo esse voluptatum id distinctio, repudiandae ipsam, placeat sit aperiam dignissimos ab et est sapiente nostrum?
+                </p>
+                <Link className= {styles.link} href= "/blog/post">Read more </Link>
 
             </div>
 

@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    gap: 100px;
+}
+
+.imgContainer{
+    flex: 1;
+    position: relative;
+    /* height: var(--image-container-height); */
+  
+}
+
+.image{
+    object-fit: cover; /* Ensure the image covers the container */
+   /* position: absolute;  Absolute positioning for fill layout */ 
+   border-radius: var(--border-radius);   
+  
+    
+   
+}
+
+.textContainer{
+    flex: 2;
+}
