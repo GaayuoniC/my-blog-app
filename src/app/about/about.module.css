@@ -3,6 +3,7 @@
 .container{
  display: flex;
  gap: 100px;
+ flex-wrap: wrap;
  /* justify-content: space-between; */
 
 }
@@ -18,7 +19,7 @@
 
 
 .title{
-    font-size: 54px;
+    font-size: 2.4em;
     
 }
 
@@ -50,7 +51,29 @@
     position: relative;
 }
 
-.about{
-  
-    object-fit: contain;
+.image{
+     
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px){
+    .container{
+      
+        flex-direction: column;             
+       
+       }
+}
+@media screen and (max-width: 632px){
+    .container{
+      
+        flex-direction: column;             
+       
+       }
+
+    .about{
+        display: none;
+     
+       
+    }
 }

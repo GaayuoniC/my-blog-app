@@ -1,7 +1,6 @@
 .container{
     display: flex;    
-    gap: 100px;
-   
+    gap: 100px;  
     
     
 }
@@ -16,9 +15,10 @@
 
 
 .image{
-    object-fit: contain;
-    height: 500px;
-    width: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+  
+    
    
    
 }
@@ -28,7 +28,8 @@
 .form{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 11px;
+   
 } 
 
 .form input,

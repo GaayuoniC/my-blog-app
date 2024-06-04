@@ -6,7 +6,7 @@ const ContactPage=()=>{
         <div className= {styles.container}>
             <div className= {styles.imgContainer}>
                 
-                <Image src="/about.jpg" className= {styles.image} width="250" height="500" alt="cocoa pod" />
+                <Image src="/about.jpg" className= {styles.image} width="300" height="470" alt="cocoa pod" />
             </div>  
 
             <div className= {styles.formContainer}>

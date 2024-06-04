@@ -8,7 +8,7 @@ const AboutPage=()=>{
            <div className={ styles.container}>
            <div className={ styles.textContainer}>
             <h2 className= {styles.subtitle}>About Creative Minds</h2>
-            <h1 className= {styles.title}>We create digital ideas that are bigger, bolder, braver and better.</h1>
+            <h1 className= {styles.title}>We create the right environment for your child to develope bigger, bolder, braver and better.</h1>
             <p className= {styles.description}> We create digital ideas that are bigger, bolder, braver and better.
                 We believe in good ideas, flexibility and precission. We are the world's 
                 Our Special Team best consulting and finance solution provider. Wide range of 
@@ -26,8 +26,9 @@ const AboutPage=()=>{
 
            </div>
            </div>
+
            <div className={ styles.imgContainer}>
-            <Image src="/about.jpg" alt="Picture of place" fill className={styles.about}/>
+              <Image src="/about.jpg" alt="Picture of place" fill className={styles.image}/>
 
            </div>
 

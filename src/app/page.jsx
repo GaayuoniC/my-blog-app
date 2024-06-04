@@ -1,5 +1,6 @@
 import styles from "./home.module.css"
 import Image from "next/image";
+import Link from "next/link";
 
 
 
@@ -11,7 +12,10 @@ const Homepage = () => {
 
       <div className={styles.buttons}>
         <button className= {styles.button}>Learn more</button>
-        <button className= {styles.button}>contact</button>  
+        <button className= {styles.button}>
+          <Link href="/contact" >contact </Link>
+          
+          </button>  
 
       </div>
 
