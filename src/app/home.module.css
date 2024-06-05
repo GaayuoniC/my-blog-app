@@ -50,3 +50,44 @@
     position: relative;
     filter: grayscale(1);
 }
+
+
+@media screen and (max-width: 1024px){
+    .container{
+      
+        flex-direction: column; 
+        text-align: center;            
+       
+    }
+
+    .image{
+     
+       display: none;
+    }
+
+    .buttons{
+        justify-content: center;
+    }
+
+    .brands{
+        width: 100%;
+    }
+
+
+   
+}
+
+
+@media screen and (max-width: 768px){
+    .title{
+      
+        font-size: 64px;          
+       
+    }
+
+   
+    
+    
+
+   
+}

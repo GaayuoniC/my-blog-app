@@ -8,7 +8,7 @@ const Homepage = () => {
   return <div className= {styles.container}>
     <div className= {styles.textContainer}>
       <h1 className= {styles.title} >Creative Minds Montessori</h1>
-      <p className= {styles.description}>Building the future of your child today! </p>
+      <p className= {styles.description}>Embodied mind creative body </p>
 
       <div className={styles.buttons}>
         <button className= {styles.button}>Learn more</button>

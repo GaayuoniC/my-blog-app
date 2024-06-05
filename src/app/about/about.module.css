@@ -60,9 +60,20 @@
 @media screen and (max-width: 768px){
     .container{
       
-        flex-direction: column;             
+        flex-direction: column; 
+        text-align: center;            
        
-       }
+    }
+
+    .image{
+     
+       display: none;
+    }
+
+    .boxes{
+        flex-direction: column;
+        gap: 50px;
+    }
 }
 @media screen and (max-width: 632px){
     .container{

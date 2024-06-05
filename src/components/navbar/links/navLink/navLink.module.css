@@ -14,8 +14,14 @@
     gap: 10px;  
     
 } 
+/* Killed here because ada does not like it TO DO!!!! */
 
-.active{
+/* .active{
     background-color: var(--text);
     color: var(--bg);
-} 
+}  */
+
+/* Come back and work on border underline below for active */
+ .active{
+   text-decoration: underline;
+}  
