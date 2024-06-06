@@ -4,7 +4,7 @@ import Image from "next/image"
 
 
 
-export default function PostCard (){
+export default function PostCard ({post}){
 
     return(
         <div className= {styles.container} >
@@ -15,10 +15,11 @@ export default function PostCard (){
                 <span className= {styles.date}>03.07.2024</span>
             </div>
             <div className= {styles.bottom}>
-                <h1 className= {styles.title}>Title</h1>
-                <p className= {styles.description}> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, repudiandae. Obcaecati, fugiat minima. Omnis quo esse voluptatum id distinctio, repudiandae ipsam, placeat sit aperiam dignissimos ab et est sapiente nostrum?
+                <h1 className= {styles.title}> {post.title} </h1>
+                <p className= {styles.description}> {post.body}
                 </p>
-                <Link className= {styles.link} href= "/blog/post">Read more </Link>
+                {/* Use back ticks and dynamically visit each blog post */}
+                <Link className= {styles.link} href= {`/blog/${post.id}`} >Read more </Link>
 
             </div>
 
