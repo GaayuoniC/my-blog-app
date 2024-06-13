@@ -26,7 +26,7 @@ const Homepage = () => {
 
     </div>
     <div className= {styles.imgContainer}>
-    <Image src= "/hero.jpg" alt="hero image" fill className= {styles.heroImage}/>
+    <Image src= "/hero.jpg" alt="hero image"  className= {styles.heroImage} width="300" height= "470" />
 
 
     </div>

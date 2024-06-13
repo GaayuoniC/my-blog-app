@@ -1,7 +1,9 @@
+
 import Image from "next/image"
 import styles from "./about.module.css"
 
 const AboutPage=()=>{
+   
     return(
         <div>
            {/* Use nextjs image tag instead of a normal image tag */}

@@ -1,6 +1,7 @@
 .container{
     display: flex;
-    gap: 10px ;
+    gap: 200px ;
+    justify-items: space-between;
 
 }
 
@@ -42,6 +43,11 @@
 .imgContainer{
     flex: 1;
     position: relative;
+}
+
+.heroImage{
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 .brands{
