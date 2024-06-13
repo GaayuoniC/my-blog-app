@@ -2,29 +2,33 @@ import PostUser from "@/components/postUser/postUser"
 import styles from "./singlePost.module.css"
 import Image from "next/image"
 import { Suspense } from "react"
+import { getPosts } from "@/lib/data"
 
+//FETCHING DATA WITH API
+// const getData = async (slug)=>{
+//     Add options for not wanting to cache the data from the api
+//     const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${slug}`)
 
-const getData = async (slug)=>{
-    //Add options for not wanting to cache the data from the api
-    const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${slug}`)
+//     Check for error here:
+//     if(!res.ok){
+//         throw new Error("Something went wrong")
+//     }
 
-    //Check for error here:
-    if(!res.ok){
-        throw new Error("Something went wrong")
-    }
+//     Return the response:
+//     return res.json()
 
-    //Return the response:
-    return res.json()
-
-}
+// }
 
 const SinglePostPage = async ({params} )=>{
     //destructure the slug
     const{slug}=params;
 
 
+    //FETCH DATA WITH AN API
+    //const post  = await getData(slug);//Pass the slug here!!
 
-    const post  = await getData(slug);//Place the slug here!!
+    //FETCH DATA WITHOUT API
+    const post = await getPosts(slug)
 
 
 
