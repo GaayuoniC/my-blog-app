@@ -22,6 +22,11 @@ export const getPosts = async  ()=>{
     return posts;
 }
 
+//Get a single post
+export const getPost = async ()=>{
+    return posts.find((post)=> post.id === parseInt(id))
+}
+
 
 export const getUser = async(id)=>{
     return users.find((user)=>user.id === parseInt(id))
