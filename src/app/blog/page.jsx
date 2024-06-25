@@ -4,8 +4,11 @@ import { getPosts } from "@/lib/data"
 
 
 
+
+
+
 //Use async for data fetching
-const BlogPage = async ()=>{
+const BlogPage = async ( )=>{
 
     //FETCH DATA WITH API
 

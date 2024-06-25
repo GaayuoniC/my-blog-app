@@ -1,17 +1,30 @@
 
+import mongoose from "mongoose"
+import dotenv from "dotenv"
+//const {default : mongoose} = require("mongoose")
 
-const {default : mongoose} = require("mongoose")
+
+dotenv.config(); //loads environment variables from the .env file
 
 
 const connection = {} //Check for the connection state here
-export const connectToDb = async()=>{
+const connectToDb = async()=>{
     try {
         if(connection.isConnected){
             console.log("Using existing connection")
             return;
         }
-        const db =  await mongoose.connect(process.env.MONGO);
-        connection.isConnected = db.connection[0].readyState;
+        const db =  await mongoose.connect(process.env.MONGO,{
+        
+         
+          serverSelectionTimeoutMS:20000, //20seconds
+          socketTimeoutMS: 45000,//45 seconds
+
+
+        });
+        connection.isConnected = db.connection[0].readyState; 
+
+        console.log("Database successfully connected")
        
       } catch (error) {
         console.log(error)
@@ -19,3 +32,4 @@ export const connectToDb = async()=>{
       }
 
 }
+export default connectToDb;
