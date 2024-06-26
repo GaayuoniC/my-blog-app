@@ -24,13 +24,14 @@ export const getPosts = async  ()=>{
     //return posts;
     try{
         await connectToDb();
-        const posts = await Post.find().populate("userId");
+        const posts = await Post.find()
+        //.populate("userId");
 
         return posts;
 
     }catch(error){
         console.log(error)
-        throw new Error("Failed to fetch post all posts!");
+        throw new Error("Failed to fetch  all posts!");
     }
 }
 
@@ -76,7 +77,7 @@ export const getUsers = async()=>{
  
  }catch(error){
      console.log(error)
-     throw new Error("Failed to fetch users!")
+     throw new Error("Failed to fetch all users!")
  }
  
  

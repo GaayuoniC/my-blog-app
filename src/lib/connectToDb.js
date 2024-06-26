@@ -14,15 +14,15 @@ const connectToDb = async()=>{
             console.log("Using existing connection")
             return;
         }
-        const db =  await mongoose.connect(process.env.MONGO,{
-        
-         
+        console.log("Trying to connect to DB (Before)") //Debugging!
+        const db =  await mongoose.connect(process.env.MONGO,{       
           serverSelectionTimeoutMS:20000, //20seconds
           socketTimeoutMS: 45000,//45 seconds
 
 
         });
-        connection.isConnected = db.connection[0].readyState; 
+
+        connection.isConnected = db.connections[0].readyState; 
 
         console.log("Database successfully connected")
        
