@@ -16,3 +16,10 @@
     font-weight: bold;
   
 }
+
+.nav-link:hover {
+    box-shadow: rgba(101, 146, 78, 0.1) 0px 35em 1.175em,
+      rgba(85, 214, 92, 0.8) 0px 0.175em 0.5em;
+    transform: translateY(-3px) scale(1.1);
+  
+  }
