@@ -26,8 +26,10 @@ export const getPosts = async  ()=>{
         await connectToDb();
         const posts = await Post.find()
         //.populate("userId");
+        console.log(posts, "Nothing in here")
 
         return posts;
+        
 
     }catch(error){
         console.log(error)

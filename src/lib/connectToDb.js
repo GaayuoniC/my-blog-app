@@ -24,7 +24,7 @@ const connectToDb = async()=>{
 
         connection.isConnected = db.connections[0].readyState; 
 
-        console.log("Database successfully connected")
+        console.log("Database successfully connected (After)")
        
       } catch (error) {
         console.log(error)
